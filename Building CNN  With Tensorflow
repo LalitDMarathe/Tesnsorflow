@@ -1,0 +1,79 @@
+malaria classification (malaria diagnosis)
+
+Image binary classification
+parasite /Uninfected
+
+image ---->model----> o/p
+
+Task 
+Data
+Modelling
+Error Sanctioning
+Training & Optimisation
+Performance
+Validation & Optimization
+Corrective Measures
+
+86 x 82 pixel
+(86  ,   82)
+steps,steps
+horizontal , vertical
+
+red_--->  Green  --->  Blue
+
+normalize value astat nastil tr 255.0 ne divide krun kru shkto an original sathi x255.0 kru.
+
+H1 W1 C         H1 = Height     W1 = Weight     C = No. of Channel     
+|   |
+----
+2D Tensor
+
+
+Black     White
+|            |
+0     -     255.0
+
+
+
+Classification with Tensorflow
+
+import libraries
+
+load data
+
+#split data
+
+#building CNN Model
+#data visualisation
+# data preprocessing
+
+resize data
+
+making batches
+
+Number of parameter = 9
+H1  W1 C
+224 224 3       C=RED,GREE,BLUE
+
+=224 X 224 X 3
+=150528 WE HAVE INPUT FEATURE
+
+ X 3 = 450000 APPROX. DIFFERENT FEATURE
+
+X 1000 NEURONS (IMAGES)   = 150 MILLION DIFFERENT PARAMETER
+
+
+Understanding HyperParameter
+
+input size - 
+Padding = 
+Kernel Size =
+Stride = 
+
+website - cnn explainer
+
+LeNet -CNN Structure
+AlexNet
+ImageNet
+
+

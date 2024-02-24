@@ -1,0 +1,81 @@
+Import Libraries (import tensorflow as tf)
+load dataset using pandas
+we can shuffle it
+convert data into tensors
+divide into 
+x
+y and expand dims
+train ratio=0.6
+val ration =0.2
+test ratio = 0.2
+dataset size = len(x)
+x_train=x[:int(datasetsize*train ratio)]
+y_train=x[:int(datasetsize*train ratio)]
+x_val=x[:int(datasetsize*train ratio)]
+y_val=x[:int(datasetsize*train ratio)]
+x_test=
+y_test=
+
+then
+from tensorflow.keras.layers import Normalization,Dense,InputLayer
+normalise the data
+
+
+#start model building
+
+methods model building
+1) Sequantial api
+2) functional api
+3) subclassing method
+
+model=tf.keras.sequantial(        [   ]  )
+model.summary()
+model.predict(x_test)
+x_test.shape
+model.predict(tf.expand_dims(x_test[0]),axis=0))
+y_test[0]
+
+plot tf.keras.utils.plot_model(model,to_file="model.png",show_shapes=True)
+
+#metrices
+from tf.keras.losses import MeanSquareError,MeanAbsoluteError,Huber
+
+model.compile(loss=MeanSquareError)
+model.fit(x,y,epochs=100,verbose=1)
+
+epochs=no of times update weights
+verbose=output from training step
+
+#optimiser
+fro tf.keras.optimizers import Adam
+model.compile(optimizer=Adam(),loss=MeanSquareError())
+history=model.fit(x,yepochs=100,Verbose=1)
+history.history
+
+Adam(learning_rate=0.1) -  learning rate loss lvkr kami hoto
+
+#plot
+plt.plot(History.history['loss'])
+plt.show()
+
+#evaluate
+
+model.evaluate(x,y)
+
+
+layers   -   Dense(3),Dense(4),Dense(2), Dense(1)
+Activation function - relu
+
+model=tf.keras.sequantial([InputLayer(input_shape(8,)),
+                           normaliser,
+                           Dense(128,activation='relu'),
+                           Dense(128,activation='relu'),
+                           Dense(32,activation='relu'),
+                           Dense(1),
+                           ])
+model.summary()
+
+
+  ])
+model.summary()
+
